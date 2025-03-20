@@ -10,15 +10,15 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://docs.folioworks.com",
+  url: "https://folioworks.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "folio", // Usually your GitHub org/user name.
-  projectName: "folio-docs", // Usually your repo name.
+  organizationName: "folioworks", // Usually your GitHub org/user name.
+  projectName: "folioworks.github.io", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -38,7 +38,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/folioworks/folio-docs",
+          editUrl: "https://github.com/folioworks/folioworks.github.io",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -69,7 +69,7 @@ const config: Config = {
           label: "Handbook",
         },
         {
-          href: "https://github.com/folioworks/folio-docs",
+          href: "https://github.com/folioworks/folioworks.github.io",
           label: "GitHub",
           position: "right",
         },
