@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Folio Docs",
-  tagline: "Folio",
+  tagline: "Is this thing on?",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -37,26 +37,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/folioworks/folio-docs/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: "https://github.com/folioworks/folio-docs",
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        //   // Useful options to enforce blogging best practices
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -67,6 +50,11 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       title: "Folio Docs",
       logo: {
@@ -76,11 +64,10 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "docsSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Handbook",
         },
-        { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/folioworks/folio-docs",
           label: "GitHub",
@@ -95,21 +82,8 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "Handbook",
+              to: "/docs/category/how-we-work",
             },
           ],
         },

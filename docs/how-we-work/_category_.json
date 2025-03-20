@@ -1,0 +1,8 @@
+{
+  "label": "How We Work",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "A guide to working at Folio. This handbook is heavily inspired by and copied from the [Posthog handbook](https://handbook.posthog.com/), which is a highly recommended read."
+  }
+}
