@@ -4,6 +4,19 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+function tailwindPlugin(context, options) {
+  return {
+    name: "tailwind-plugin",
+    configurePostCss(postcssOptions) {
+      postcssOptions.plugins = [
+        require("@tailwindcss/postcss"),
+        require("autoprefixer"),
+      ];
+      return postcssOptions;
+    },
+  };
+}
+
 const config: Config = {
   title: "Folio Docs",
   tagline: "Is this thing on?",
@@ -47,6 +60,8 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
+  plugins: [tailwindPlugin],
 
   themeConfig: {
     colorMode: {

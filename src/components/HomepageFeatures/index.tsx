@@ -16,9 +16,11 @@ const FeatureList: FeatureItem[] = [
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
-        Find out what we're trying to achieve at Folio.
-        <br />
-        <Link className="button button--secondary button--lg" to="/docs/vision">
+        <div>Find out what we're trying to achieve at Folio.</div>
+        <Link
+          className="button button--primary button--lg max-w-64"
+          to="/docs/vision"
+        >
           Our vision
         </Link>
       </>
@@ -29,10 +31,9 @@ const FeatureList: FeatureItem[] = [
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
-        Learn about how we work at Folio, our values and more.
-        <br />
+        <div>Learn about how we work at Folio, our values and more.</div>
         <Link
-          className="button button--secondary button--lg"
+          className="button button--primary button--lg max-w-64"
           to="/docs/category/how-we-work"
         >
           How we work
@@ -45,10 +46,9 @@ const FeatureList: FeatureItem[] = [
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>
-        Get started engineering at Folio.
-        <br />
+        <div>Get started engineering at Folio.</div>
         <Link
-          className="button button--secondary button--lg"
+          className="button button--primary button--lg max-w-64"
           to="/docs/category/engineering"
         >
           Engineering Handbook
@@ -61,12 +61,14 @@ const FeatureList: FeatureItem[] = [
 function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx("col col--4")}>
-      <div className="text--center">
+      <div className="flex justify-center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className="flex flex-col gap-3 text-center items-center justify-center">
+        <Heading as="h3" className="mb-0!">
+          {title}
+        </Heading>
+        {description}
       </div>
     </div>
   );

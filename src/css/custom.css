@@ -33,3 +33,5 @@
   --ifm-color-primary-lightest: #ffd8c7;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+@import "tailwindcss";
