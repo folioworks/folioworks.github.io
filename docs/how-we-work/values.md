@@ -38,3 +38,11 @@ Default to not asking for permission to do something if you are acting in the be
 Always start with the 20:80 solution. Ask yourself "How can I do 20% of the work to get 80% of the value?". Be hacky. Be scrappy. Be creative. Be fast.
 
 As we grow, we will encounter times when we need to build scalable systems. Even then, ask what’s the 20% of scaling work we need now. We’ll do the other 80% of the work over time.
+
+# We're on the maker's schedule
+
+We're big believers in the importance of the [maker's schedule](https://www.paulgraham.com/makersschedule.html). If we have meetings at all, we'll cluster them around any stand-ups, so our day doesn't get split up.
+
+Tuesdays and Thursdays function as "no/low meeting days" and we try to avoid scheduling meetings on these days. Occasionally an external meeting will slip in on those days, such as customer/investor calls or interviews, but we try to keep those to an absolute minimum. As always though, don't ignore teammates asking for help or P0 issues.
+
+![What the Maker's Calendar looks like](../../static/img/makerscalendar.jpg)

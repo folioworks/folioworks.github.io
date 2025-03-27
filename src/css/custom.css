@@ -78,3 +78,15 @@ html[data-theme="dark"] {
 }
 
 @import "tailwindcss";
+
+@layer base {
+  ul {
+    @apply list-disc list-outside;
+  }
+  ol {
+    @apply list-decimal list-outside;
+  }
+  a > svg {
+    @apply inline-block;
+  }
+}
