@@ -58,7 +58,8 @@ const config: Config = {
       title: "Folio Docs",
       logo: {
         alt: "Folio Docs Logo",
-        src: "img/logo.svg",
+        src: "img/folio-logo-black.svg",
+        srcDark: "img/folio-logo-white.svg",
       },
       items: [
         {
