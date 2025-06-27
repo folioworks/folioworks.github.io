@@ -13,7 +13,7 @@ Folio uses a branching strategy where:
 - `main` branch is used for releases
 - Releases are managed through GitHub's release system
 
-## Release Process
+## Standard Release Process
 
 ### 1. Preparing for Release
 
